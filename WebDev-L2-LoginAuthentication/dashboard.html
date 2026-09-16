@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SecureAuth - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body class="dashboard-page">
+
+    <header class="dashboard-header">
+
+        <div class="dashboard-brand">
+            SecureAuth
+        </div>
+
+        <button
+            id="logoutButton"
+            class="logout-btn"
+        >
+            Logout
+        </button>
+
+    </header>
+
+
+    <main class="dashboard-main">
+
+        <section class="welcome-card">
+
+            <div class="dashboard-icon">
+                ✓
+            </div>
+
+            <p class="dashboard-label">
+                AUTHENTICATION SUCCESSFUL
+            </p>
+
+            <h1>
+                Welcome, <span id="userName"></span>!
+            </h1>
+
+            <p class="dashboard-message">
+                You have successfully logged into
+                your protected dashboard.
+            </p>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <div class="info-card">
+
+                <span class="info-icon">
+                    👤
+                </span>
+
+                <div>
+
+                    <p class="info-label">
+                        NAME
+                    </p>
+
+                    <h3 id="dashboardName">
+                        -
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span class="info-icon">
+                    ✉️
+                </span>
+
+                <div>
+
+                    <p class="info-label">
+                        EMAIL
+                    </p>
+
+                    <h3 id="dashboardEmail">
+                        -
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span class="info-icon">
+                    🔒
+                </span>
+
+                <div>
+
+                    <p class="info-label">
+                        ACCOUNT STATUS
+                    </p>
+
+                    <h3>
+                        Authenticated
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="dashboard-footer">
+
+        <p>
+            Oasis Infobyte Web Development Internship —
+            Level 2, Task 4
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
